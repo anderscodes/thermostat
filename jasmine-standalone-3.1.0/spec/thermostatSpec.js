@@ -72,10 +72,15 @@ describe("Thermostat", function(){
       expect(thermostat.powerUsage).toEqual('low-usage');
     });
 
-    it("should return low if temperature is below 18", function() {
+    it("should return low if temperature is below 25", function() {
       thermostat.temperature = 23
       thermostat.powerUsageCheck();
       expect(thermostat.powerUsage).toEqual('medium-usage');
+    });
+    it("should return high if temperature is above 25", function() {
+      thermostat.temperature = 27
+      thermostat.powerUsageCheck();
+      expect(thermostat.powerUsage).toEqual('high-usage');
     });
   });
 });
