@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css">
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <title> Thermostat </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./src/thermostat.js"></script>
+    <script src="./src/thermostatFunctions.js"></script>
+
+
+  </head>
+
+  <body>
+    <h1> Thermostat </h1>
+    <h2 id="temperature">  </h2>
+
+    <div class="progress">
+
+    </div>
+
+    <button id="up"> UP </button>
+    <button id="down"> DOWN </button>
+    <button id="reset"> RESET </button>
+    <br><br>
+    <h3> Power Saving mode? </h3>
+    <label id="powersavingmode">
+      <input type="checkbox" >
+      <span class="slider round"></span>
+    </label>
+
+    <h1 id="powermode"> </h1>
+
+  </body>
+</html>

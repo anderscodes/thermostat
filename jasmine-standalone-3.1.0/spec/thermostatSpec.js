@@ -83,4 +83,11 @@ describe("Thermostat", function(){
       expect(thermostat.powerUsage).toEqual('high-usage');
     });
   });
+
+  describe("changePowerMode", function(){
+    it("should change the power saving mode", function(){
+      thermostat.changePowerMode();
+      expect(thermostat.powerSavingMode).toBe(false);
+    });
+  });
 });
