@@ -72,7 +72,7 @@ describe("Thermostat", function(){
       expect(thermostat.powerUsage).toEqual('low-usage');
     });
 
-    it("should return low if temperature is below 25", function() {
+    it("should return medium if temperature is below 25", function() {
       thermostat.temperature = 23
       thermostat.powerUsageCheck();
       expect(thermostat.powerUsage).toEqual('medium-usage');
